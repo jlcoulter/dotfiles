@@ -5,7 +5,7 @@
 # Copyright (c) 2012 Craig Barnes
 # Copyright (c) 2013 horsik
 # Copyright (c) 2013 Tao Sauvage
-# Test
+#
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
 # in the Software without restriction, including without limitation the rights
@@ -122,7 +122,7 @@ layouts = [
     # layout.MonadWide(),
     # layout.RatioTile(),
     layout.Tile(
-        margin = 10,
+        margin = 12,
         border_focus = "#3e91ff",
         border_normal = "#ff0c00",
         border_width = 6
@@ -158,12 +158,13 @@ screens = [
                     name_transform=lambda name: name.upper(),
                 ),
                 widget.Clock(
-                    format="%Y-%m-%d %a %I:%M %p"
+                    format="%Y-%m-%d %a %I:%M %p",
+                    padding = 2150
                     ),
             ],
             24,
-            # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
-            # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
+            border_width=[2, 0, 2, 0],  # Draw top and bottom borders
+            #border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
             background="#50000000"
         ),
     ),
