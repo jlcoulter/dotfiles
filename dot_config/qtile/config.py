@@ -122,7 +122,7 @@ layouts = [
     # layout.MonadWide(),
     # layout.RatioTile(),
     layout.Tile(
-        margin = 12,
+        margin = 8,
         border_focus = "#3e91ff",
         border_normal = "#ff0c00",
         border_width = 6
@@ -139,13 +139,19 @@ widget_defaults = dict(
 )
 extension_defaults = widget_defaults.copy()
 
+
 screens = [
     Screen(
         top=bar.Bar(
-            [
+            [   widget.Sep(
+                     linewidth = 0,
+                     padding = 20
+                ),
                 widget.GroupBox(
                     active = "#98d3ff",
-                    inactive = "#98d3ff"
+                    inactive = "#98d3ff",
+                    padding = 6,
+                    highlight_method='block'
                 ),
                 widget.Prompt(
                     active = "#98d3ff",
@@ -164,7 +170,7 @@ screens = [
             ],
             24,
             border_width=[2, 0, 2, 0],  # Draw top and bottom borders
-            #border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
+            #border_color=["ff00ff", "000000", "ff00ff", "000000"],  # Borders are magenta
             background="#50000000"
         ),
     ),
