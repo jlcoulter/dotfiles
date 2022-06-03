@@ -81,7 +81,7 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawn("rofi -show drun"), desc="Spawn Rofi"),
     Key([mod], "b", lazy.spawn("chromium"), desc="Spawn Chromium"),
-    Key([mod], "t", lazy.spawn("nnn"), desc="Spawn N3"),
+    Key([mod], "t", lazy.spawn("alacritty -e nnn -eEHn"), desc="Spawn Thunar"),
     Key(["shift", "control"], "space", lazy.spawn("flameshot gui"), desc="Spawn Flameshot Screenshot"),
 ]
 
@@ -115,21 +115,21 @@ layouts = [
     #layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4),
     #layout.Max(),
     # Try more layouts by unleashing below layouts.
-    # layout.Stack(num_stacks=2),
-    # layout.Bsp(),
-    # layout.Matrix(),
-    # layout.MonadTall(),
-    # layout.MonadWide(),
-    # layout.RatioTile(),
+    #layout.Stack(num_stacks=2),
+    #layout.Bsp(),
+    #layout.Matrix(),
+    #layout.MonadTall(),
+    #layout.MonadWide(),
+    #layout.RatioTile(),
     layout.Tile(
         margin = 8,
         border_focus = "#3e91ff",
         border_normal = "#ff0c00",
         border_width = 6
     ),
-    # layout.TreeTab(),
-    # layout.VerticalTile(),
-    # layout.Zoomy(),
+    #layout.TreeTab(),
+    #layout.VerticalTile(),
+    #layout.Zoomy(),
 ]
 
 widget_defaults = dict(
