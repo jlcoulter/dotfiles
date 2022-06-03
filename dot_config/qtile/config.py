@@ -81,7 +81,7 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawn("rofi -show drun"), desc="Spawn Rofi"),
     Key([mod], "b", lazy.spawn("chromium"), desc="Spawn Chromium"),
-    Key([mod], "t", lazy.spawn("thunar"), desc="Spawn Thuanr"),
+    Key([mod], "t", lazy.spawn("nnn"), desc="Spawn N3"),
     Key(["shift", "control"], "space", lazy.spawn("flameshot gui"), desc="Spawn Flameshot Screenshot"),
 ]
 
